@@ -1,0 +1,338 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="شركة Screen Ads - خدمات الإعلانات والشاشات الذكية في منيا القمح" />
+    <meta name="keywords" content="إعلانات، شاشات، screen ads، مصر، منيا القمح، شارع الثورة، عروض، تسويق" />
+    <meta name="author" content="Screen Ads" />
+    <title>Screen Ads | الرائدة في الإعلانات الرقمية</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: 'Cairo', sans-serif;
+        background-color: #f4f6f9;
+        color: #1b1f23;
+        line-height: 1.6;
+      }
+      header {
+        background-color: #10382c;
+        color: white;
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .logo {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: #8dfc93;
+      }
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 1.5rem;
+      }
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+      }
+      .hero {
+        background: linear-gradient(to right, #10382c, #155f3e);
+        color: white;
+        text-align: center;
+        padding: 4rem 2rem;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.4s ease;
+      }
+      .hero:hover {
+        transform: scale(1.02);
+        z-index: 10;
+      }
+      .hero::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(2px);
+        z-index: -1;
+      }
+      .hero h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+      }
+      .hero p {
+        font-size: 1.2rem;
+      }
+      .section {
+        padding: 3rem 2rem;
+        max-width: 1200px;
+        margin: auto;
+        transition: all 0.4s ease;
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      .section.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .section h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color: #10382c;
+      }
+      .section p {
+        color: #333;
+      }
+      .footer {
+        background-color: #10382c;
+        color: #ccc;
+        text-align: center;
+        padding: 2rem;
+        font-size: 0.9rem;
+      }
+      .btn {
+        background-color: #8dfc93;
+        color: black;
+        padding: 0.8rem 1.5rem;
+        border-radius: 5px;
+        font-weight: bold;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 1.5rem;
+      }
+      .whatsapp-float {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        background-color: #25D366;
+        color: white;
+        border-radius: 50%;
+        padding: 15px;
+        font-size: 22px;
+        z-index: 1000;
+        text-decoration: none;
+      }
+      .features {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin-top: 2rem;
+      }
+      .feature-box {
+        flex: 1 1 250px;
+        background-color: white;
+        border-radius: 10px;
+        padding: 1.5rem;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        transition: all 0.3s ease;
+      }
+      .feature-box:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+      }
+      .feature-box h3 {
+        color: #155f3e;
+        margin-bottom: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- محتوى الموقع --><!DOCTYPE html>
+    <header>
+      <div class="logo">Screen Ads</div>
+      <nav>
+        <ul>
+          <li><a href="#about">من نحن</a></li>
+          <li><a href="#services">الخدمات</a></li>
+          <li><a href="#why">لماذا نحن؟</a></li>
+          <li><a href="#location">موقعنا</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>الإعلان الذكي يبدأ من هنا</h1>
+      <p>شاشات رقمية مبتكرة لعرض خدماتك في أفضل المواقع وأكثرها تأثيراً</p>
+      <a href="#services" class="btn">اكتشف خدماتنا</a>
+    </section>
+
+    <section class="section" id="about">
+      <h2>عن Screen Ads</h2>
+      <p>
+        نحن شركة متخصصة في تقديم حلول الإعلانات الذكية عبر شاشات رقمية عالية الجودة. هدفنا هو خلق فرص ترويج فعالة بأسعار مناسبة لأصحاب المشاريع والأعمال التجارية. من خلال استراتيجياتنا الحديثة والمواقع الحيوية التي نتواجد فيها، نضمن أن تصل رسالتك التسويقية إلى الجمهور المستهدف بشكل مميز.
+      </p>
+    </section>
+
+    <section class="section" id="services">
+      <h2>خدماتنا</h2>
+      <p>
+        - عرض إعلاناتك على شاشاتنا المنتشرة بأماكن استراتيجية.<br />
+        - تخصيص تصميم الإعلان حسب الهوية البصرية لنشاطك.<br />
+        - باقات خصم وترويج موسمية.<br />
+        - دعم تسويقي واستشارات مجانية لكل العملاء الجدد.<br />
+        - ربط الإعلان برابط واتساب أو كود خصم خاص بك.<br />
+      </p>
+    </section>
+   
+
+    <section class="section" id="why">
+      <h2>لماذا تختارنا؟</h2>
+      <div class="features">
+        <div class="feature-box">
+          <h3>مواقع استراتيجية</h3>
+          <p>نتواجد في أماكن حيوية لزيادة عدد المشاهدات الفعلية لإعلانك.</p>
+        </div>
+        <div class="feature-box">
+          <h3>أسعار مناسبة</h3>
+          <p>نوفر باقات مرنة تناسب مختلف أنواع الأنشطة والأعمال.</p>
+        </div>
+        <div class="feature-box">
+          <h3>دعم فني وتسويقي</h3>
+          <p>نرافقك في كل خطوة، من الفكرة وحتى التنفيذ وتحليل النتائج.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="location">
+      <h2>موقعنا</h2>
+      <p>
+        📍 مصر - الشرقية - منيا القمح - ميدان المنسي - أعلى مطعم - شارع الثورة<br />
+        تفضل بزيارتنا أو تواصل معنا عبر واتساب لأي استفسار.
+      </p>
+    </section>
+     <!-- شراكة التصميم -->
+<section class="section" id="partnership">
+  <p style="text-align: center; margin-top: 2rem; color: #155f3e; font-weight: bold;">
+    💡 تم تنفيذ هذا الموقع بالتعاون مع
+    <a href="https://teto-agency.com" target="_blank" style="color:#10382c; text-decoration: underline;">
+      Teto Creative Agency
+    </a>
+  </p>
+</section>
+
+    <footer class="footer">
+      &copy; 2025 Screen Ads - جميع الحقوق محفوظة. تصميم احترافي يعكس مستقبل الإعلانات.
+    </footer>
+  
+
+
+    <script>
+      const sections = document.querySelectorAll('.section');
+      const options = {
+        threshold: 0.3
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, options);
+
+      sections.forEach(section => {
+        observer.observe(section);
+      });
+    </script>
+    <!-- زر الدائرة الرئيسية -->
+<div class="social-toggle" onclick="toggleSocial()">
+  $
+</div>
+
+<!-- روابط السوشيال ميديا -->
+<div class="social-links">
+  <a href="https://wa.me/201000650592" target="_blank" title="واتساب">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="واتساب" class="icon" />
+  </a>
+  <a href="https://instagram.com/tetoagency" target="_blank" title="إنستجرام">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="إنستجرام" class="icon" />
+  </a>
+  <a href="https://facebook.com/tetoagency" target="_blank" title="فيسبوك">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="فيسبوك" class="icon" />
+  </a>
+</div>
+
+<style>
+  .social-toggle {
+    position: fixed;
+    bottom: 100px;
+    left: 20px;
+    background-color: #155f3e;
+    color: white;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 999;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+  }
+
+  .social-links {
+    position: fixed;
+    bottom: 160px;
+    left: 26px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 998;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+
+  .social-links.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .social-links a {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: background-color 0.3s;
+  }
+
+  .social-links a:hover {
+    background-color: #e0e0e0;
+  }
+
+  .icon {
+    width: 22px;
+    height: 22px;
+    filter: invert(32%) sepia(20%) saturate(800%) hue-rotate(90deg) brightness(95%) contrast(90%);
+  }
+</style>
+
+<script>
+  function toggleSocial() {
+    document.querySelector('.social-links').classList.toggle('active');
+  }
+</script>
+
+  </body>
+</html>
+
