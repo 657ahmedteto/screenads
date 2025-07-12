@@ -138,6 +138,25 @@ nav ul li a:hover {
         gap: 2rem;
         margin-top: 2rem;
       }
+      .cta-offer {
+  background-color: #8dfc93;
+  color: #10382c;
+  padding: 1rem 1.5rem;
+  margin: 1.5rem auto;
+  font-weight: bold;
+  border-radius: 8px;
+  display: inline-block;
+  animation: pulse 1.8s infinite;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* أنيميشن لجذب الانتباه */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
       .feature-box {
         flex: 1 1 250px;
         background-color: white;
@@ -172,6 +191,10 @@ nav ul li a:hover {
     <section class="hero">
       <h1>الإعلان الذكي يبدأ من هنا</h1>
       <p>شاشات رقمية مبتكرة لعرض خدماتك في أفضل المواقع وأكثرها تأثيراً</p>
+      
+       <div class="cta-offer">
+  🎁 احصل على خصم <strong>50%</strong> عند حجز إعلانك الأول معنا اليوم فقط!
+</div>
       <a href="#services" class="btn">اكتشف خدماتنا</a>
     </section>
 
