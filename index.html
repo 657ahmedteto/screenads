@@ -214,6 +214,82 @@
       @media (max-width: 900px) {
         .features { flex-direction: column; }
       }
+      /* الهواتف الصغيرة */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: 1rem;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .section {
+    padding: 2rem 1rem;
+  }
+
+  .features {
+    flex-direction: column;
+  }
+
+  .feature-box {
+    flex: 1 1 100%;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 0.7rem 1.2rem;
+  }
+
+  .social-toggle,
+  .social-links {
+    left: 10px;
+    bottom: 80px;
+  }
+
+  .social-links {
+    bottom: 140px;
+    left: 15px;
+  }
+}
+
+/* التابلت */
+@media (min-width: 601px) and (max-width: 991px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+  }
+
+  nav ul {
+    gap: 1rem;
+  }
+
+  .feature-box {
+    flex: 1 1 45%;
+  }
+}
+
+/* الشاشات الكبيرة */
+@media (min-width: 992px) {
+  .feature-box {
+    flex: 1 1 30%;
+  }
+}
+
     </style>
   </head>
   <body>
@@ -295,11 +371,6 @@
     <footer class="footer">
       &copy; 2025 Screen Ads - جميع الحقوق محفوظة. تصميم احترافي يعكس مستقبل الإعلانات.
     </footer>
-
-    <!-- زر واتساب عائم -->
-    <a href="https://wa.me/201006400054" class="whatsapp-float" target="_blank" title="تواصل عبر واتساب">
-      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="تواصل عبر واتساب" style="width:28px; height:28px;" />
-    </a>
 
     <!-- زر الدائرة الرئيسية + روابط السوشيال -->
     <div class="social-toggle" onclick="toggleSocial()" title="سوشيال ميديا">
