@@ -42,11 +42,17 @@
         display: flex;
         gap: 1.5rem;
       }
-      nav ul li a {
-        color: white;
-        text-decoration: none;
-        font-weight: 500;
-      }
+    nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #8dfc93;
+}
+
       .hero {
         background: linear-gradient(to right, #10382c, #155f3e);
         color: white;
@@ -151,7 +157,6 @@
     </style>
   </head>
   <body>
-    <!-- محتوى الموقع --><!DOCTYPE html>
     <header>
       <div class="logo">Screen Ads</div>
       <nav>
